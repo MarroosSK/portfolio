@@ -1,0 +1,8 @@
+.custom_icon {
+    cursor: pointer !important;
+    transition: 0.25s ease-in-out;
+    color: grey;
+  }
+.custom_icon:hover {
+    color: #2bffaa; 
+  }
