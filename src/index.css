@@ -1,11 +1,40 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
-  background-color: rgb(239, 237, 233);
-  color: #111111;
+html {
+  scroll-padding-top: 70px;
+}
+
+body {
+  background-color: #1a1a1b;
+  color: #6f7071 !important;
   overflow-x: hidden;
+}
+
+.logo_color {
+  color: #6f7071;
+}
+
+/* scrollSPY */
+.active-scroll-spy {
+  color: #2bffaa;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.custom-badge {
+  background-color: rgba(39, 39, 39, 0.2) !important;
+  color: inherit;
+  padding: 5px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 480px) {
+
+  .xs-width {
+    width: 250px !important;
+  }
 }

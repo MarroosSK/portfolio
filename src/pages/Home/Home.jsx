@@ -1,18 +1,34 @@
-import { AboutMeBrief, ContactBrief, Hero, ProjectGallerySlider, Title } from '../../components'
+import {
+  AboutMeBrief,
+  ContactBrief,
+  Hero,
+  ProjectGallery,
+  Tech,
+} from "../../components";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <div className='d-flex flex-column justify-content-center align-items-center'>
-    
-        <Hero/>
-        <Title name="Working with" word="about" titleSide="left"/>
-        <AboutMeBrief/>
-        <Title name="Worked on" word="projects" titleSide="right"/>
-        <ProjectGallerySlider/>
-        <Title name="Work with me" word="contact"/>
-        <ContactBrief/>
-    </div>
-  )
-}
+    <Row id="home">
+      <Col className="d-flex flex-column justify-content-center align-items-center">
+        <Container>
+          <div id="home">
+            <Hero />
+          </div>
+          <div id="about">
+            <AboutMeBrief />
+            <Tech />
+          </div>
+          <div id="projects">
+            <ProjectGallery />
+          </div>
+          <div id="contact">
+            <ContactBrief />
+          </div>
+        </Container>
+      </Col>
+    </Row>
+  );
+};
 
-export default Home
+export default Home;

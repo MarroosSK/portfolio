@@ -1,36 +1,51 @@
-import { Col, Row } from "react-bootstrap";
-import {  skillSet } from "../../helpers/data";
-import { Link } from "react-router-dom";
 import "./About.css";
+import Title from "../Title/Title";
+import { Button, Col, Image, Row } from "react-bootstrap";
+import { personal } from "../../helpers/data";
+import anonym from "../../assets/profilePic2.jpg";
+
 const AboutMeBrief = () => {
   return (
-    <Row
-      style={{ width: "100vw", height: "100vh", backgroundColor: "#2bffaa" }}
-    >
-      <Col className="mt-5 d-flex gap-5 flex-column justify-content-center align-items-center">
-        <h6
-          className="display-6"
-          style={{ fontSize: "25px", fontWeight: "bold" }}
-        >
-          Tech
-        </h6>
-        <div className="mt-3 d-flex flex-column flex-sm-row gap-1 gap-sm-3 gap-md-5">
-          {skillSet.map((skill) => (
-            <div key={skill.id}>
-              <Link to={skill.url} className=" custom_icon2">
-                {skill.icon}
-              </Link>
+    <Row className="d-flex flex-row justify-content-center ">
+      <Title name="About me" />
+      <hr style={{ color: "#2bffaa" }} />
+      {/* foto+meno */}
+      <Col
+        xs={12}
+        sm={12}
+        md={6}
+        className="d-flex flex-column justify-content-center"
+      >
+        <div className="align-self-center">
+          <Image
+            rounded
+            src={anonym}
+            className="img-fluid"
+            style={{ height: "385px" }}
+          />
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex flex-column">
+              <h6 className="mt-2">{personal.name}</h6>
+              <p style={{ fontSize: "12px" }}>React Developer</p>
             </div>
-          ))}
+            <Button
+              variant="outline-dark"
+              href="/files/resumeMarosChmel.pdf"
+              target="_blank"
+              className="btn_size"
+            >
+              Check CV
+            </Button>
+          </div>
         </div>
-        <h6
-          className="display-6 mt-3"
-          style={{ fontSize: "25px", fontWeight: "bold" }}
+      </Col>
+
+      <Col xs={12} sm={12} md={6}>
+        <p
+          className="display-2"
+          style={{ fontSize: "15px", margin: "35px", lineHeight: "32px" }}
         >
-          Tech to Learn
-        </h6>
-        <p style={{ fontSize: "12px" }}>
-          Tailwind.css, Styled Components, Next.js, and more...
+          {personal.info}
         </p>
       </Col>
     </Row>

@@ -10,6 +10,7 @@ import meds from "../assets/4_meds.jpg";
 import dictionary from "../assets/3_dictionary.jpg";
 import twitter from "../assets/1_twitter_clone.jpg";
 import bmi from "../assets/2_bmi.jpg";
+import gamer from "../assets/11_gamer.jpg";
 //icons - social
 import {BsLinkedin, BsGithub} from "react-icons/bs"
 //icons - skillSet
@@ -20,17 +21,13 @@ import {BsBootstrapFill} from "react-icons/bs"
 
 
 export const personal = {
-  name: "My Name",
-  dateOfBirth: "My Date",
-  age: 0,
-  address: "My Address",
-  city: "My Address",
-  country: "My Address",
-  phone: "My phone",
-  email: "My mail",
-  info: "........Info.....",
+  name: "Maroš Chmeľ",
+  age: 29,
+  phone: "0908 026 829",
+  email: "maros1chmel@gmail.com",
+  info: `Hi! My name is Maroš Chmeľ. I am a self-taught react front end developer from Vranov nad Topľou, Slovakia. While originally going to University studying social work, I started coding on suggestion of my brother in Autumn 2022 and from that point on, I was hooked. Since then I have been learning everyday. I have built some projects to showcase my work. For some examples of recent work, see Projects. I am looking for positions as intern or junior react developer. I am  always fully focused about the work that I do and would love to chat about how I might be able to help the work that you do!`,
 };
-
+export const skillDesc = `While these are some of the technologies I am the most comfortable with when working with React, I am constantly looking to expand my toolkit and am open to working with and learning new skills!`
 export const skillSet = [
   {
     id: 1,
@@ -97,94 +94,57 @@ export const skillSet = [
 export const myProjects = [
   {
     id: uuidv4(),
-    title: "1. Twitter Clone",
-    url: "https://1twitterclone.netlify.app",
-    info: "Clone of Twitter page to test HTML and CSS.",
-    source: "https://github.com/MarroosSK/1_twitter_clone",
-    img: twitter,
-    technologies: ["Bootstrap"],
+    title: "Gamer Store app",
+    url: "https://gamerbymaros.netlify.app/",
+    info: "Gamer store app inspired in instant-gaming web app. Purpose of this app is to provide digital keys for games to users. It contains all functions gamer store app should have. Although this app is pure front end, log in is implemented, where data are stored in local storage. User can filter games and add them to cart or wishlist in profile.",
+    source: "https://github.com/MarroosSK/11_gamarr",
+    img: gamer,
+    technologies: "Material-UI",
+    stack: ["Typescript", "Mui", "ContextAPI", "Axios", "ChartJS", "React-Hook-Form", "React-Multicarousel"]
   },
   {
     id: uuidv4(),
-    title: "2. Bmi Calculator",
-    url: "https://2bmi.netlify.app",
-    info: "Calculator to check Body Mass Index with tips based on results with help of SASS.",
-    source: "https://github.com/MarroosSK/2_bmi_calculator",
-    img: bmi,
-    technologies: "Bootstrap",
-  },
-  {
-    id: uuidv4(),
-    title: "3. Dictionary",
-    url: "https://3dictionary.netlify.app",
-    info: "Find meaning of any word. Inspiration taken at react examples website.",
-    source: "https://github.com/MarroosSK/3_dictionary",
-    img: dictionary,
-    technologies: "Bootstrap",
-  },
-  {
-    id: uuidv4(),
-    title: "4. Weekly Meds Schedule",
-    url: "https://4medsschedule.netlify.app",
-    info: "App for elder people to track their meds usage.",
-    source: "https://github.com/MarroosSK/4_meds_schedule",
-    img: meds,
-    technologies: "Bootstrap",
-  },
-  {
-    id: uuidv4(),
-    title: "5. MovieInfo",
-    url: "https://5moviewishlist.netlify.app",
-    info: "App allows user to search for movies and add/ remove them from wishlist.",
-    source: "https://github.com/MarroosSK/5_movies_wishlist",
-    img: movies,
-    technologies: "Bootstrap",
-  },
-  {
-    id: uuidv4(),
-    title: "6. Local Bistro menu",
-    url: "https://6bistro.netlify.app",
-    info: "Menu of Local Bistro, that serves delicious meals.",
-    source: "https://github.com/MarroosSK/6_local_bistro",
-    img: bistro,
-    technologies: "Bootstrap",
-  },
-  {
-    id: uuidv4(),
-    title: "7. 3 quizes",
-    url: "https://7quiz3x.netlify.app",
-    info: "3 quizes app, test your knowledge from 3 different categories.",
-    source: "https://github.com/MarroosSK/7_quiz3x",
-    img: quiz,
-    technologies: "Bootstrap",
-  },
-  {
-    id: uuidv4(),
-    title: "8. Gallery",
+    title: "Gallery app",
     url: "https://8gallery.netlify.app/",
-    info: "Gallery app made with typescript and redux toolkit. ChatGPT assisted.",
+    info: "Gallery app made with typescript and redux toolkit. Purpose of this app is to allow user search for pictures and display them in modal. My goal was to practice work with API, because pictures are fetched from unsplashAPI.",
     source: "https://github.com/MarroosSK/8_gallery",
     img: gallery,
     technologies: "Material-UI",
+    stack: ["Typescript", "Mui", "Redux-Toolkit", "Axios"]
   },
+
   {
     id: uuidv4(),
-    title: "9. Blog",
+    title: "Ebolg blog app",
     url: "https://9blog.netlify.app",
-    info: "Blog for every traveller. Use of Firebase with help of ChatGPT.",
+    info: "Blog for every traveller. Purpose of this app is to share info about place from places all over the Globe. I used help of ChatGPT to make it work with firebase, where data are stored. App contains Login/Register, Add Blog, Blogs, and comment sections.",
     source: "https://github.com/MarroosSK/9_blog",
     img: blog,
-    technologies: "Material-UI",
+    technologies: "Bootstrap",
+    stack: ["Typescript", "Bootstrap", "Firebase", "Axios"]
   },
   {
     id: uuidv4(),
-    title: "10. E-shop",
-    url: "https://10eshopcart.netlify.app",
-    info: "App created with ChatGPT focused on cart functionality.",
-    source: "https://github.com/MarroosSK/10_eshop_cart",
-    img: eshop,
-    technologies: "Material-UI",
+    title: "Dictionary",
+    url: "https://3dictionary.netlify.app",
+    info: "Find meaning of any word. Inspiration taken at react examples website. Purpose of this ap is self-explanatory. It works as online dictionary in english language. My goal was to practice react query to fetch data.",
+    source: "https://github.com/MarroosSK/3_dictionary",
+    img: dictionary,
+    technologies: "Bootstrap",
+    stack: ["Typescript", "Bootstrap", "ContextAPI", "React-Query", "Axios", "React-Icons"]
   },
+  {
+    id: uuidv4(),
+    title: "Bmi Calculator",
+    url: "https://2bmi.netlify.app",
+    info: "Calculator to check Body Mass Index made with SASS. Purpose of this app is to check BMI of user and provide tips based on results. User type height and width and receives BMI index with prompt to accept or deny tips according to result.  My goal was to try SASS and ternary operators.",
+    source: "https://github.com/MarroosSK/2_bmi_calculator",
+    img: bmi,
+    technologies: "Bootstrap",
+    stack: [ "Bootstrap", "SASS", "ContextAPI", "Axios", "Router-Dom", "React-Icons"]
+  },
+
+
 ];
 
 export const about = ["React self-taught | ", "Front End Developer"];
@@ -195,7 +155,7 @@ export const icons = [
     {
         name: "LinkedIn",
         icon: <BsLinkedin  size={25} />,
-        url: "https://www.linkedin.com",
+        url: "https://www.linkedin.com/in/maroš-chmeľ-883b21280/",
         alt: "linked_in",
     },
     {

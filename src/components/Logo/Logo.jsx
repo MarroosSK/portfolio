@@ -10,11 +10,14 @@ const logoVariants = {
 
 const Logo = () => {
   return (
-    <>
-      <motion.div variants={logoVariants} initial="hidden" animate="visible">
-        marroos
-      </motion.div>
-    </>
+    <motion.p
+      variants={logoVariants}
+      initial="hidden"
+      animate="visible"
+      className="logo_color"
+    >
+      marroos
+    </motion.p>
   );
 };
 

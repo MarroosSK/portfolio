@@ -1,19 +1,21 @@
-.img_hover:hover{
-    transform: scale(1.1); 
-    transition: transform 0.2s ease-in-out; 
+.img_hover:hover {
     opacity: 0.4;
 }
-.img2_hover:hover{
-    opacity:0.8;
+
+.img2_hover:hover {
+    opacity: 0.8;
 }
-.custom_card:hover{
-    background-color: #2bffaa;
+
+.custom_card {
+    background-color: inherit;
+    color: #6f7071 !important;
     transition: 0.3s ease-in-out;
 }
 
-.source_code{
-    color: black;
+.source_code {
+    color: #6f7071 !important;
 }
-.source_code:hover{
-    color: gray;
+
+.source_code:hover {
+    color: #2bffaa !important;
 }
