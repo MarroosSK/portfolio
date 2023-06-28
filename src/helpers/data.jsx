@@ -112,17 +112,6 @@ export const myProjects = [
     technologies: "Material-UI",
     stack: ["Typescript", "Mui", "Redux-Toolkit", "Axios"]
   },
-
-  {
-    id: uuidv4(),
-    title: "Ebolg blog app",
-    url: "https://9blog.netlify.app",
-    info: "Blog for every traveller. Purpose of this app is to share info about place from places all over the Globe. I used help of ChatGPT to make it work with firebase, where data are stored. App contains Login/Register, Add Blog, Blogs, and comment sections.",
-    source: "https://github.com/MarroosSK/9_blog",
-    img: blog,
-    technologies: "Bootstrap",
-    stack: ["Typescript", "Bootstrap", "Firebase", "Axios"]
-  },
   {
     id: uuidv4(),
     title: "Dictionary",
