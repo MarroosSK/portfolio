@@ -9,18 +9,23 @@ html {
 }
 
 body {
-  background-color: #1a1a1b;
-  color: #6f7071 !important;
+  background-color: #111111;
+  color: #BBBBBB !important;
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo_color {
-  color: #6f7071;
+  color: #BBBBBB;
 }
 
 /* scrollSPY */
 .active-scroll-spy {
-  color: #2bffaa;
+  color: rgba(245, 229, 237, 0.2);
   border-radius: 15px;
   transition: all 0.5s;
 }

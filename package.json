@@ -14,7 +14,7 @@
     "@hookform/resolvers": "^3.1.1",
     "bootstrap": "^5.3.0",
     "formik": "^2.4.1",
-    "framer-motion": "^10.12.16",
+    "framer-motion": "^10.12.22",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",

@@ -12,22 +12,11 @@ const ProjectGallery = () => {
   const animation = useAnimation();
   const [allProjects, setAllProjects] = useState(myProjects);
 
-  const handleFilter = (word) => {
-    if (word === "all") {
-      setAllProjects(myProjects);
-    } else {
-      let filteredStuff = myProjects.filter(
-        (project) => project.technologies === word
-      );
-      setAllProjects(filteredStuff);
-    }
-  };
-
   useEffect(() => {
     if (isInView) {
       animation.start({
-        x: 0,
-        transition: { type: "spring", duration: 1, bounce: 0.3 },
+        y: 0,
+        transition: { type: "spring", duration: 2, bounce: 0.1 },
       });
     }
   }, [isInView, animation]);
@@ -37,95 +26,85 @@ const ProjectGallery = () => {
       <Container>
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
           <Title name="Projects" />
-          <div className="d-flex flex-column flex-sm-row gap-2">
-            <Button
-              variant="outline-dark"
-              className="btn_size"
-              onClick={() => handleFilter("all")}
-            >
-              All
-            </Button>
-            <Button
-              variant="outline-dark"
-              className="btn_size"
-              onClick={() => handleFilter("Bootstrap")}
-            >
-              Bootstrap
-            </Button>
-            <Button
-              variant="outline-dark"
-              className="btn_size"
-              onClick={() => handleFilter("Material-UI")}
-            >
-              Material-UI
-            </Button>
-          </div>
         </div>
-        <hr style={{ color: "#2bffaa" }} />
-        <Col className="d-flex flex-column">
+        <hr style={{ color: "#0D6EFD" }} />
+        <Col
+          className="d-flex flex-column justify-content-between align-items-center"
+          style={{ marginTop: "20px", marginBottom: "20px" }}
+        >
           <motion.div
-            className="d-flex flex-row flex-wrap  mb-5"
-            initial={{ x: "-100vw" }}
+            initial={{ y: "200vw" }}
+            className="gallery"
             animate={animation}
           >
             {allProjects.map((project) => (
-              <Col
-                xs={12}
+              <div
+                className="d-flex flex-column flex-md-row mb-5"
+                style={{ gap: "25px" }}
                 key={project.id}
-                className="d-flex  justify-content-center align-items-center mt-3"
               >
-                <Card
-                  style={{
-                    maxWidth: "500px",
-                    height: "100%",
-                    boxShadow: "none",
-                    backgroundColor: "rgba(39, 39, 39, 0.2)",
-
-                    borderRadius: "10px",
-                    bottom: { xs: "10px", sm: "30px", md: "80px" },
-                  }}
-                  className="d-flex flex-column custom_card"
-                >
-                  <Link to={project.url} target="_blank">
-                    <Card.Img
-                      variant="top"
-                      src={project.img}
-                      style={{ maxWidth: "500px", height: "100%" }}
-                      className=" img_hover"
-                      rounded
-                    />
-                  </Link>
-                  <Card.Body>
-                    <Card.Title style={{ fontSize: "20px" }}>
-                      {project.title}
-                    </Card.Title>
-                    <Card.Text style={{ fontSize: "12px" }}>
-                      {project.info}
-                    </Card.Text>
-                    {project.stack.map((tech) => (
-                      <Badge className="custom-badge" key={tech}>
-                        {tech}
-                      </Badge>
-                    ))}
-                    <div className="d-flex flex-column flex-sm-row mt-3">
-                      <Card.Link
-                        href={project.url}
-                        target="_blank"
-                        className="source_code"
+                <img
+                  src={project.img}
+                  style={{ maxWidth: "400px" }}
+                  className="img_hover"
+                />
+                <Col key={project.id}>
+                  <Card
+                    style={{
+                      height: "100%",
+                      boxShadow: "none",
+                      backgroundColor: "inherit",
+                      border: "none",
+                    }}
+                  >
+                    <Card.Body style={{ maxWidth: "500px" }}>
+                      <Link to={project.url} target="_blank">
+                        <Card.Title
+                          style={{
+                            fontSize: "20px",
+                            color: "#0D6EFD",
+                          }}
+                        >
+                          {project.title}
+                        </Card.Title>
+                      </Link>
+                      <Card.Text
+                        style={{
+                          fontSize: "12px",
+                          color: "#6f7071",
+                        }}
                       >
-                        Live Preview
-                      </Card.Link>
-                      <Card.Link
-                        href={project.source}
-                        target="_blank"
-                        className="source_code"
-                      >
-                        Source Code
-                      </Card.Link>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </Col>
+                        {project.info}
+                      </Card.Text>
+                      {project.stack.map((tech) => (
+                        <Badge
+                          className="custom-badge"
+                          style={{ color: "#6f7071" }}
+                          key={tech}
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                      <div className="d-flex flex-row mt-3">
+                        <Card.Link
+                          href={project.url}
+                          target="_blank"
+                          className="source_code"
+                        >
+                          Live Preview
+                        </Card.Link>
+                        <Card.Link
+                          href={project.source}
+                          target="_blank"
+                          className="source_code"
+                        >
+                          Source Code
+                        </Card.Link>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </div>
             ))}
           </motion.div>
         </Col>

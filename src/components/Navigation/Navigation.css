@@ -25,20 +25,20 @@ nav.navbar.scrolled {
 .custom_link {
   width: 3.5rem;
   color: #6f7071 !important;
-  border-bottom: 1px solid rgba(233, 224, 224, 0.2);
+  border-bottom: 1px solid #0D6EFD;
 }
 
 .custom_link:hover {
-  border-bottom: 2px solid #2bffaa;
+  border-bottom: 2px solid #0D6EFD;
 }
 
 .active_link {
-  color: #2bffaa;
-  border-bottom: 2px solid #2bffaa;
+  color: #0D6EFD;
+  border-bottom: 2px solid #0D6EFD;
 }
 
 .btn_size {
-  background-color: #2bffaa !important;
+  background-color: #0D6EFD !important;
   transition: 0.6;
 }
 
@@ -49,7 +49,7 @@ nav.navbar.scrolled {
 
 @media screen and (max-width: 768px) {
   nav.navbar {
-    border-bottom: 1px solid #2bffaa;
+    border-bottom: 1px solid #0D6EFD;
   }
 
   .btn_size {

@@ -76,7 +76,7 @@ const ContactBrief = () => {
   return (
     <Row className="d-flex justify-content-center align-items-center">
       <Title name="Contact" />
-      <hr style={{ color: "#2bffaa" }} />
+      <hr style={{ color: "#0D6EFD" }} />
       <Col className="d-flex flex-column">
         <Container>
           <div
@@ -103,7 +103,7 @@ const ContactBrief = () => {
                 >
                   <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Control
-                      style={{ backgroundColor: "#2bffaa" }}
+                      style={{ backgroundColor: "#0D6EFD" }}
                       type="text"
                       name="user_name"
                       placeholder="Name"
@@ -119,7 +119,7 @@ const ContactBrief = () => {
 
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control
-                      style={{ backgroundColor: "#2bffaa" }}
+                      style={{ backgroundColor: "#0D6EFD" }}
                       type="email"
                       name="user_email"
                       placeholder="E-mail"
@@ -135,7 +135,7 @@ const ContactBrief = () => {
 
                   <Form.Group className="mb-3" controlId="formBasicText">
                     <Form.Control
-                      style={{ backgroundColor: "#2bffaa" }}
+                      style={{ backgroundColor: "#0D6EFD" }}
                       as="textarea"
                       name="message"
                       placeholder="Message"
