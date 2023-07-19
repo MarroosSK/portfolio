@@ -10,8 +10,8 @@ const Tech = () => {
           <div style={{ margin: "35px", paddingBottom: "20px" }}>
             <Row className="d-flex justify-content-between">
               <h6 style={{ color: "#0D6EFD" }}>Knowledge</h6>
-              <p>{skillDesc}</p>
-              <Col className="d-flex flex-wrap gap-2 gap-md-5">
+              <p style={{ marginBottom: "35px" }}>{skillDesc}</p>
+              <Col className="d-flex justify-content-center align-items-center flex-wrap gap-2 gap-md-5">
                 {skillSet.map((skill) => (
                   <div
                     className="d-flex flex-column justify-content-center align-items-center"

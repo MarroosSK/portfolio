@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SkillSet = () => {
   return (
     <Row className="d-flex">
-      <Col className="d-flex flex-wrap gap-2">
+      <Col className="d-flex justify-content-center align-items-center flex-wrap gap-2">
         {icons.map((socialMedia) => (
           <div key={socialMedia.name}>
             <Link to={socialMedia.url} className="custom_icon" target="_blank">

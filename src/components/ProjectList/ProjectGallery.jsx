@@ -29,7 +29,7 @@ const ProjectGallery = () => {
         </div>
         <hr style={{ color: "#0D6EFD" }} />
         <Col
-          className="d-flex flex-column justify-content-between align-items-center"
+          className="d-flex flex-column justify-content-center justify-content-sm-between align-items-center"
           style={{ marginTop: "20px", marginBottom: "20px" }}
         >
           <motion.div
@@ -43,11 +43,13 @@ const ProjectGallery = () => {
                 style={{ gap: "25px" }}
                 key={project.id}
               >
-                <img
-                  src={project.img}
-                  style={{ maxWidth: "400px" }}
-                  className="img_hover"
-                />
+                <Link to={project.url} target="_blank">
+                  <img
+                    src={project.img}
+                    style={{ maxWidth: "400px" }}
+                    className="img_hover"
+                  />
+                </Link>
                 <Col key={project.id}>
                   <Card
                     style={{
@@ -114,7 +116,10 @@ const ProjectGallery = () => {
           to={"https://github.com/MarroosSK?tab=repositories"}
           target="_blank"
         >
-          <Button className="btn btn-dark btn_size" style={{ color: "#000" }}>
+          <Button
+            className="btn btn-dark btn_size"
+            style={{ color: "#000", marginBottom: "33px" }}
+          >
             more projects
           </Button>
         </Link>

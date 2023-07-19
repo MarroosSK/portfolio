@@ -136,13 +136,13 @@ export const myProjects = [
   },
   {
     id: uuidv4(),
-    title: "React Basics",
+    title: "ReacTY - React Basics",
     url: "https://react-basics-chi.vercel.app",
     info: "React Basics app inspired in W3-School learning material for React. Purpose of this app is to give quick intro to people looking for learning React.",
     source: "https://github.com/MarroosSK/13_react_basics",
     img: basics,
     technologies: "Frontend",
-    stack: ["Material-UI", "Axios", "Router-Router-Dom", "React-Icons"],
+    stack: ["Material-UI", "Router-Router-Dom", "React-Icons"],
   },
   {
     id: uuidv4(),
