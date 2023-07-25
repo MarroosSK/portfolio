@@ -28,7 +28,7 @@ export const personal = {
   age: 29,
   phone: "0908 026 829",
   email: "maros1chmel@gmail.com",
-  info: `Hi! My name is Maroš Chmeľ. I am a self-taught full-stack developer from Vranov nad Topľou, Slovakia. My stack consists of React.js (frontend) and Express.js (backend). While originally going to University studying social work, I started coding on suggestion of my brother in Autumn 2022 and from that point on, I was hooked. Since then I have been learning everyday, first front end, later backend. I have built some projects to showcase my work. For some examples of recent work, see Projects section. I am looking for positions as intern or junior frontend/ fullstack developer. I am  always fully focused about the work that I do and would love to chat about how I might be able to help the work that you do!`,
+  info: `Hi! My name is Maroš Chmeľ. I am a self-taught frontend developer from Vranov nad Topľou, Slovakia. I work with React.js (frontend) and getting better at using Express.js (backend). While originally going to University studying social work, I started coding on suggestion of my brother in Autumn 2022 and from that point on, I was hooked. Since then I have been learning everyday, first front end, later backend. I have built some projects to showcase my work. For some examples of recent work, see Projects section. I am looking for positions as intern or junior frontend/ fullstack developer. I am  always fully focused about the work that I do and would love to chat about how I might be able to help the work that you do!`,
 };
 export const skillDesc = `While these are some of the technologies I am the most comfortable with when working with React, I am currently looking to expand my toolkit by learning new technologies!`;
 export const skillSet = [
@@ -108,6 +108,16 @@ export const skillSet = [
 export const myProjects = [
   {
     id: uuidv4(),
+    title: "Gallery app",
+    url: "https://8gallery.netlify.app/",
+    info: "Gallery app made with typescript and redux toolkit. Purpose of this app is to allow user search for pictures and display them in modal.",
+    source: "https://github.com/MarroosSK/8_gallery",
+    img: gallery,
+    technologies: "Frontend",
+    stack: ["Typescript", "Material-UI", "Redux-Toolkit", "Axios"],
+  },
+  {
+    id: uuidv4(),
     title: "Gamer Store app",
     url: "https://gamerbymaros.netlify.app/",
     info: "Gamer store app inspired in instant-gaming web app. Purpose of this app is to provide digital keys for games to users. It contains all functions gamer store app should have.",
@@ -116,7 +126,7 @@ export const myProjects = [
     technologies: "Frontend",
     stack: [
       "Typescript",
-      "Mui",
+      "Material-UI",
       "ContextAPI",
       "Axios",
       "ChartJS",
@@ -132,7 +142,15 @@ export const myProjects = [
     source: "https://github.com/MarroosSK/9b.-full-stack-blog",
     img: yourself,
     technologies: "Full-stack",
-    stack: ["Material-UI", "React", "Express", "Mysql", "Prisma", "Vercel"],
+    stack: [
+      "Typescript",
+      "Material-UI",
+      "React",
+      "Express",
+      "Mysql",
+      "Prisma",
+      "Vercel",
+    ],
   },
   {
     id: uuidv4(),
@@ -142,17 +160,7 @@ export const myProjects = [
     source: "https://github.com/MarroosSK/13_react_basics",
     img: basics,
     technologies: "Frontend",
-    stack: ["Material-UI", "Router-Router-Dom", "React-Icons"],
-  },
-  {
-    id: uuidv4(),
-    title: "Gallery app",
-    url: "https://8gallery.netlify.app/",
-    info: "Gallery app made with typescript and redux toolkit. Purpose of this app is to allow user search for pictures and display them in modal.",
-    source: "https://github.com/MarroosSK/8_gallery",
-    img: gallery,
-    technologies: "Frontend",
-    stack: ["Typescript", "Mui", "Redux-Toolkit", "Axios"],
+    stack: ["Typescript", "Material-UI", "Router-Router-Dom", "React-Icons"],
   },
   {
     id: uuidv4(),
@@ -173,7 +181,7 @@ export const myProjects = [
   },
 ];
 
-export const about = ["React self-taught | ", "Full-stack Developer"];
+export const about = ["React self-taught | ", "Frontend Developer"];
 
 export const icons = [
   {
