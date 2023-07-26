@@ -7,6 +7,8 @@ import * as emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+//icons
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 import Title from "../Title/Title";
 const ContactBrief = () => {
@@ -88,7 +90,17 @@ const ContactBrief = () => {
                 xs={12}
                 className="d-flex flex-column justify-content-center align-items-center"
               >
-                <h5 className="display-5 fs-1">Work with me</h5>
+                <h5 className="display-5 fs-1 mb-4">Work with me</h5>
+                <div className="d-flex justify-content-center align-items-center gap-5 mb-4">
+                  <div className="d-flex  flex-column justify-content-center align-items-center">
+                    <AiOutlinePhone />
+                    <p>0908 026 829</p>
+                  </div>
+                  <div className="d-flex flex-column justify-content-center align-items-center">
+                    <AiOutlineMail />
+                    <p>maros1chmel@gmail.com</p>
+                  </div>
+                </div>
                 {showAlert && (
                   <Alert className="fade show" variant="success">
                     Message sent.

@@ -19,7 +19,7 @@ const AboutMeBrief = () => {
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex flex-column">
               <h6 className="mt-2">{personal.name}</h6>
-              <p style={{ fontSize: "15px" }}>Full-stack Developer</p>
+              <p style={{ fontSize: "15px" }}>Frontend Developer</p>
             </div>
             <Button
               variant="outline-dark"
