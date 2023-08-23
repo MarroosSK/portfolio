@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const Title = ({ name }) => {
-  return <h5 className={`display-5`}>{name}</h5>;
+  return <h5 className="text-center text-[32px] text-headingColor">{name}</h5>;
 };
 
 export default Title;

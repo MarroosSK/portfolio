@@ -1,24 +1,19 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/js/src/scrollspy.js";
-import { Col, Container, Row } from "react-bootstrap";
-import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages";
-import { ErrorPage, Footer, Navigation } from "./components";
+import { Footer, Header } from "./components";
+import Aos from "aos";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div>
-      <Navigation />
-      <Container>
-        <Row className="d-flex justify-content-center align-items-center">
-          <Col>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/*" element={<ErrorPage />} />
-            </Routes>
-          </Col>
-        </Row>
-      </Container>
+      <Header />
+      <main>
+        <Home />
+      </main>
       <Footer />
     </div>
   );

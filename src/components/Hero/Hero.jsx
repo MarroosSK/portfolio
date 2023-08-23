@@ -1,4 +1,3 @@
-import { Col, Row } from "react-bootstrap";
 import { about } from "../../helpers/data";
 import SkillSet from "../SkillSet/SkillSet";
 import Typewriter from "typewriter-effect";
@@ -18,42 +17,49 @@ const Hero = () => {
   const aboutInfo = about[0] + about[1];
 
   return (
-    <motion.div ref={targetRef} style={{ opacity: opacity, height: "100vh" }}>
+    <div className="container">
       <motion.div
-        style={{ scale: scale }}
-        className="d-flex justify-content-center align-items-center gap-2"
+        data-aos="fade-up"
+        data-aos-duration="1100"
+        ref={targetRef}
+        style={{ opacity: opacity, height: "100vh" }}
       >
-        <Row
-          className="d-flex justify-content-center align-items-center text-center"
-          style={{ opacity: opacity, height: "100vh" }}
+        <motion.div
+          style={{ scale: scale }}
+          className="flex justify-center items-center gap-2"
         >
-          <Col
-            style={{ scale: scale }}
-            className="d-flex flex-column justify-content-center align-items-center gap-2"
+          <div
+            className="flex justify-center items-center text-center"
+            style={{ opacity: opacity, height: "100vh" }}
           >
-            <h1>
-              Hi, i am Maroš<span className="textColor">.</span>
-            </h1>
-            <h6>
-              <Typewriter
-                options={{
-                  strings: [aboutInfo],
-                  autoStart: true,
-                  loop: true,
-                  delay: 60,
-                  wrapperClassName: "textColor",
-                }}
-              />
-            </h6>
-            <p style={{ alignSelf: "start", fontSize: "12px" }}>
-              Ready to work with React on real world projects with eager to
-              learn new technologies.
-            </p>
-            <SkillSet />
-          </Col>
-        </Row>
+            <div
+              style={{ scale: scale }}
+              className="flex flex-col justify-center items-center gap-2"
+            >
+              <h1 className="text-4xl sm:text-6xl">
+                Hi, i am Maroš<span className="textColor">.</span>
+              </h1>
+              <h6 className="text-1xl sm:text-2xl">
+                <Typewriter
+                  options={{
+                    strings: [aboutInfo],
+                    autoStart: true,
+                    loop: true,
+                    delay: 85,
+                    wrapperClassName: "textColor",
+                  }}
+                />
+              </h6>
+              <p className="max-w-[600px] text-[14px] sm:text-[18px] py-4">
+                Ready to work with React on real world projects with eager to
+                learn new technologies.
+              </p>
+              <SkillSet />
+            </div>
+          </div>
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

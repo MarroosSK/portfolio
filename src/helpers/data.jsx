@@ -25,10 +25,7 @@ import { BsBootstrapFill } from "react-icons/bs";
 
 export const personal = {
   name: "Maroš Chmeľ",
-  age: 29,
-  phone: "0908 026 829",
-  email: "maros1chmel@gmail.com",
-  info: `Hi! My name is Maroš Chmeľ. I am a self-taught frontend developer from Vranov nad Topľou, Slovakia. I work with React.js (frontend) and getting better at using Express.js (backend). While originally going to University studying social work, I started coding on suggestion of my brother in Autumn 2022 and from that point on, I was hooked. Since then I have been learning everyday, first front end, later backend. I have built some projects to showcase my work. For some examples of recent work, see Projects section. I  would like to start getting experience in professional development, therefore i am looking for positions as intern or junior frontend/ full-stack developer. I am always fully focused about the work that I do and would love to chat about how I might be able to help the work that you do!`,
+  info: `Hi! My name is Maroš Chmeľ. I am a self-taught frontend developer from Vranov nad Topľou, Slovakia. I work with React.js (frontend) and starting to learn Express (backend).`,
 };
 export const skillDesc = `While these are some of the technologies I am the most comfortable with when working with React, I am currently looking to expand my toolkit by learning new technologies!`;
 export const skillSet = [
@@ -44,7 +41,7 @@ export const skillSet = [
   },
   {
     id: 3,
-    name: "Javascript",
+    name: "JS",
     icon: <DiJavascript1 size={25} />,
   },
   {
@@ -54,7 +51,7 @@ export const skillSet = [
   },
   {
     id: 5,
-    name: "Typescript",
+    name: "TS",
     icon: <SiTypescript size={25} />,
   },
   {
@@ -70,17 +67,17 @@ export const skillSet = [
 
   {
     id: 9,
-    name: "React Bootstrap",
+    name: "Bootstrap",
     icon: <BsBootstrapFill size={25} />,
   },
   {
     id: 10,
-    name: "Material-UI",
+    name: "MUI",
     icon: <SiMui size={25} />,
   },
   {
     id: 11,
-    name: "Tailwind css",
+    name: "Tailwind",
     icon: <SiTailwindcss size={25} />,
   },
   {
@@ -95,12 +92,12 @@ export const skillSet = [
   },
   {
     id: 14,
-    name: "Express.js",
+    name: "Express",
     icon: <SiExpress size={25} />,
   },
   {
     id: 15,
-    name: "Prisma ORM",
+    name: "Prisma",
     icon: <SiPrisma size={25} />,
   },
 ];
@@ -113,8 +110,8 @@ export const myProjects = [
     info: "Gallery app made with typescript and redux toolkit. Purpose of this app is to allow user search for pictures and display them in modal.",
     source: "https://github.com/MarroosSK/8_gallery",
     img: gallery,
-    technologies: "Frontend",
     stack: ["Typescript", "Material-UI", "Redux-Toolkit", "Axios"],
+    category: "front-end",
   },
   {
     id: uuidv4(),
@@ -123,7 +120,6 @@ export const myProjects = [
     info: "Gamer store app inspired in instant-gaming web app. Purpose of this app is to provide digital keys for games to users. It contains all functions gamer store app should have.",
     source: "https://github.com/MarroosSK/11_gamarr",
     img: gamer,
-    technologies: "Frontend",
     stack: [
       "Typescript",
       "Material-UI",
@@ -133,6 +129,7 @@ export const myProjects = [
       "React-Hook-Form",
       "React-Multicarousel",
     ],
+    category: "front-end",
   },
   {
     id: uuidv4(),
@@ -141,7 +138,6 @@ export const myProjects = [
     info: "Full-stack Blog app. Purpose of this app is to work as fully functional blog. Frontend created by React, backend with express, mysql and Prisma. There is authentication in this app, and user can perform CRUD operations.",
     source: "https://github.com/MarroosSK/9b.-full-stack-blog",
     img: yourself,
-    technologies: "Full-stack",
     stack: [
       "Typescript",
       "Material-UI",
@@ -151,6 +147,7 @@ export const myProjects = [
       "Prisma",
       "Vercel",
     ],
+    category: "full-stack",
   },
   {
     id: uuidv4(),
@@ -159,8 +156,8 @@ export const myProjects = [
     info: "React Basics app inspired in W3-School learning material for React. Purpose of this app is to give quick intro to people looking for learning React.",
     source: "https://github.com/MarroosSK/13_react_basics",
     img: basics,
-    technologies: "Frontend",
     stack: ["Typescript", "Material-UI", "Router-Router-Dom", "React-Icons"],
+    category: "front-end",
   },
   {
     id: uuidv4(),
@@ -169,7 +166,6 @@ export const myProjects = [
     info: "Find meaning of any word. Inspiration taken at react examples website. Purpose of this ap is to work as online dictionary in english language.",
     source: "https://github.com/MarroosSK/3_dictionary",
     img: dictionary,
-    technologies: "Frontend",
     stack: [
       "Typescript",
       "Bootstrap",
@@ -178,6 +174,7 @@ export const myProjects = [
       "Axios",
       "React-Icons",
     ],
+    category: "front-end",
   },
 ];
 

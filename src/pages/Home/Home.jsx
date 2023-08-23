@@ -1,33 +1,25 @@
-import {
-  AboutMeBrief,
-  ContactBrief,
-  Hero,
-  ProjectGallery,
-  Tech,
-} from "../../components";
-import { Container, Row, Col } from "react-bootstrap";
+import { Hero, Title } from "../../components";
+import About from "../../components/AboutMe/About";
+import Contact from "../../components/Contact/Contact";
+import Projects from "../../components/Projects/Projects";
 
 const Home = () => {
   return (
-    <Row id="home">
-      <Col className="d-flex flex-column justify-content-center align-items-center">
-        <Container>
-          <div id="home">
-            <Hero />
-          </div>
-          <div id="about">
-            <AboutMeBrief />
-            <Tech />
-          </div>
-          <div id="projects">
-            <ProjectGallery />
-          </div>
-          <div id="contact">
-            <ContactBrief />
-          </div>
-        </Container>
-      </Col>
-    </Row>
+    <>
+      <Hero />
+      <div id="about" className="flex flex-col items-center justify-center">
+        <Title name="About" />
+        <About />
+      </div>
+      <div id="projects">
+        <Title name="Projects" />
+        <Projects />
+      </div>
+      <div id="contact">
+        <Title name="Contact" />
+        <Contact />
+      </div>
+    </>
   );
 };
 

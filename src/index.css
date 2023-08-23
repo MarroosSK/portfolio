@@ -1,45 +1,59 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 html {
-  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+
 }
 
 body {
-  background-color: #111111;
-  color: #BBBBBB !important;
-  overflow-x: hidden;
+
+  font-family: "Rubik", sans-serif;
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
+
+
+section {
+  padding: 50px 0;
 }
 
-.logo_color {
-  color: #BBBBBB;
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
 }
 
-/* scrollSPY */
-.active-scroll-spy {
-  color: rgba(245, 229, 237, 0.2);
-  border-radius: 15px;
-  transition: all 0.5s;
+
+
+li a {
+  position: relative;
 }
 
-.custom-badge {
-  background-color: rgba(39, 39, 39, 0.2) !important;
-  color: inherit;
-  padding: 5px;
-  margin: 5px;
+li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transform: translateX(50%);
+  background: #0D6EFD;
+  transition: width 0.3s;
 }
 
-@media screen and (max-width: 480px) {
-
-  .xs-width {
-    width: 250px !important;
-  }
+li a:hover::after {
+  width: 50%;
 }
+
