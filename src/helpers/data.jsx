@@ -1,8 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
 //images
-import gallery from "../assets/8_gallery.jpg";
+import vortex from "../assets/VortexCourses.jpg";
+import gallery from "../assets/Gallery.jpg";
 import dictionary from "../assets/3_dictionary.jpg";
-import basics from "../assets/13-basics.jpg";
+import basics from "../assets/Reacty.jpg";
 import yourself from "../assets/14-yourself.jpg";
 import gamer from "../assets/11_gamer.jpg";
 //icons - social
@@ -105,30 +106,22 @@ export const skillSet = [
 export const myProjects = [
   {
     id: uuidv4(),
-    title: "Gallery app",
+    title: "Vortex Courses",
+    url: "https://16-vortex-courses.vercel.app",
+    info: "Vortex courses made with typescript. Purpose of this app is to allow users to enroll course they want.",
+    source: "https://github.com/MarroosSK/16_Vortex_courses",
+    img: vortex,
+    stack: ["Typescript", "Framer Motion", "Router Dom", "Axios"],
+    category: "front-end",
+  },
+  {
+    id: uuidv4(),
+    title: "First 15 Gallery",
     url: "https://8gallery.netlify.app/",
     info: "Gallery app made with typescript and redux toolkit. Purpose of this app is to allow user search for pictures and display them in modal.",
     source: "https://github.com/MarroosSK/8_gallery",
     img: gallery,
     stack: ["Typescript", "Material-UI", "Redux-Toolkit", "Axios"],
-    category: "front-end",
-  },
-  {
-    id: uuidv4(),
-    title: "Gamer Store app",
-    url: "https://gamerbymaros.netlify.app/",
-    info: "Gamer store app inspired in instant-gaming web app. Purpose of this app is to provide digital keys for games to users. It contains all functions gamer store app should have.",
-    source: "https://github.com/MarroosSK/11_gamarr",
-    img: gamer,
-    stack: [
-      "Typescript",
-      "Material-UI",
-      "ContextAPI",
-      "Axios",
-      "ChartJS",
-      "React-Hook-Form",
-      "React-Multicarousel",
-    ],
     category: "front-end",
   },
   {
@@ -173,6 +166,24 @@ export const myProjects = [
       "React-Query",
       "Axios",
       "React-Icons",
+    ],
+    category: "front-end",
+  },
+  {
+    id: uuidv4(),
+    title: "Gamer - game keys store",
+    url: "https://gamerbymaros.netlify.app/",
+    info: "Gamer store app inspired in instant-gaming web app. Purpose of this app is to provide digital keys for games to users. It contains all functions gamer store app should have.",
+    source: "https://github.com/MarroosSK/11_gamarr",
+    img: gamer,
+    stack: [
+      "Typescript",
+      "Material-UI",
+      "ContextAPI",
+      "Axios",
+      "ChartJS",
+      "React-Hook-Form",
+      "React-Multicarousel",
     ],
     category: "front-end",
   },
