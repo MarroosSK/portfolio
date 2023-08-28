@@ -21,7 +21,7 @@ const About = () => {
                       data-aos="fade-right"
                       data-aos-delay="100"
                       data-aos-duration="1400"
-                      className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150"
+                      className="bg-white p-4 rounded shadow group hover:bg-primaryColor ease-in duration-150"
                     >
                       <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-2xl">
                         {personal.name}
@@ -30,7 +30,7 @@ const About = () => {
                         {personal.info}
                       </p>
                       <button className=" w-full text-[#0D6EFD] flex items-center justify-center gap-2  font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-[#0D6EFD] hover:text-white ease-in duration-300">
-                        <a href="/files/resumeMarosChmel.pdf" target="_blank">
+                        <a href="#" target="_blank">
                           Check CV
                         </a>
                       </button>
@@ -40,7 +40,7 @@ const About = () => {
 
                 {/* icon */}
                 <div
-                  className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 
+                  className="rounded-full bg-white border-black border-4 w-10 h-10 
               absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0
                flex items-center justify-center"
                 >
@@ -60,7 +60,7 @@ const About = () => {
                       data-aos="fade-right"
                       data-aos-delay="50"
                       data-aos-duration="1300"
-                      className=" bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150"
+                      className=" bg-white p-4 rounded shadow group hover:bg-primaryColor ease-in duration-150"
                     >
                       <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-2xl">
                         Tech Stack
@@ -74,7 +74,7 @@ const About = () => {
 
                 {/* icon */}
                 <div
-                  className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 
+                  className="rounded-full bg-white border-black border-4 w-10 h-10 
               absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0
                flex items-center justify-center"
                 >
@@ -94,7 +94,7 @@ const About = () => {
                       data-aos="fade-right"
                       data-aos-delay="100"
                       data-aos-duration="1400"
-                      className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150"
+                      className="bg-white p-4 rounded shadow group hover:bg-primaryColor ease-in duration-150"
                     >
                       <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-2xl">
                         Projects
@@ -112,7 +112,7 @@ const About = () => {
 
                 {/* icon */}
                 <div
-                  className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 
+                  className="rounded-full bg-white border-black border-4 w-10 h-10 
               absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0
                flex items-center justify-center"
                 >

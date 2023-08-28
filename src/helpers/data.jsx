@@ -4,7 +4,7 @@ import vortex from "../assets/VortexCourses.jpg";
 import gallery from "../assets/Gallery.jpg";
 import dictionary from "../assets/3_dictionary.jpg";
 import basics from "../assets/Reacty.jpg";
-import yourself from "../assets/14-yourself.jpg";
+import whyb from "../assets/whyb.jpg";
 import gamer from "../assets/11_gamer.jpg";
 //icons - social
 import { BsLinkedin, BsGithub } from "react-icons/bs";
@@ -106,12 +106,12 @@ export const skillSet = [
 export const myProjects = [
   {
     id: uuidv4(),
-    title: "Vortex Courses",
-    url: "https://16-vortex-courses.vercel.app",
-    info: "Vortex courses made with typescript. Purpose of this app is to allow users to enroll course they want.",
-    source: "https://github.com/MarroosSK/16_Vortex_courses",
-    img: vortex,
-    stack: ["Typescript", "Framer Motion", "Router Dom", "Axios"],
+    title: "Where Have You Been? (Full-Stack)",
+    url: "https://17-visit-blog.vercel.app",
+    info: "Travelling blog. You can try to create your own blog. You can also search for certain blogs or filter by category.",
+    source: "https://github.com/MarroosSK/17.Visit_Blog",
+    img: whyb,
+    stack: ["Typescript", "React Query", "Router Dom", "Axios", "React-Quill"],
     category: "front-end",
   },
   {
@@ -126,21 +126,13 @@ export const myProjects = [
   },
   {
     id: uuidv4(),
-    title: "Yourself Blog (Full-stack)",
-    url: "https://blog-yourself.vercel.app/",
-    info: "Full-stack Blog app. Purpose of this app is to work as fully functional blog. Frontend created by React, backend with express, mysql and Prisma. There is authentication in this app, and user can perform CRUD operations.",
-    source: "https://github.com/MarroosSK/9b.-full-stack-blog",
-    img: yourself,
-    stack: [
-      "Typescript",
-      "Material-UI",
-      "React",
-      "Express",
-      "Mysql",
-      "Prisma",
-      "Vercel",
-    ],
-    category: "full-stack",
+    title: "Vortex Courses",
+    url: "https://16-vortex-courses.vercel.app",
+    info: "Vortex courses made with typescript. Purpose of this app is to allow users to enroll course they want.",
+    source: "https://github.com/MarroosSK/16_Vortex_courses",
+    img: vortex,
+    stack: ["Typescript", "Framer Motion", "Router Dom", "Axios"],
+    category: "front-end",
   },
   {
     id: uuidv4(),
@@ -189,7 +181,7 @@ export const myProjects = [
   },
 ];
 
-export const about = ["React self-taught | ", "Frontend Developer"];
+export const about = ["React & ", "Frontend Developer"];
 
 export const icons = [
   {

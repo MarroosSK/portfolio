@@ -11,7 +11,17 @@
   left: 0;
   background: #fff;
   box-shadow: 3px 3px -8px 3px #ddd;
-  z-index: 50;
+  z-index: 40;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Tmavá farba s priehľadnosťou */
+  z-index: 98; /* Pod navigáciou, ale nad ostatným obsahom */
 }
 
   /* RESPONSIVE */

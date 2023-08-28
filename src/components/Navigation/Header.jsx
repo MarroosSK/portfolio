@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { FiSend } from "react-icons/fi";
 import { RiMenuFill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
+import mIcon from "../../assets/Micon.png";
 import "./Header.css";
 
 const logoVariants = {
@@ -14,12 +15,13 @@ const logoVariants = {
   },
 };
 const Header = () => {
+  const sideMenuRef = useRef(null);
   const headerRef = useRef(null);
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
   const handleOffSet = (e) => {
     e.preventDefault();
-
+    setToggleMobileMenu(false);
     const targetAttribute = e.target.getAttribute("href");
     const location = document.querySelector(targetAttribute).offsetTop;
 
@@ -38,6 +40,17 @@ const Header = () => {
       }
     });
   };
+  //close on click outside
+  useEffect(() => {
+    const handler = (e) => {
+      if (!sideMenuRef.current.contains(e.target)) {
+        setToggleMobileMenu(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   useEffect(() => {
     stickyHeaderFunc();
@@ -48,19 +61,14 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="w-full h-[80px] leading-[80px] flex items-center"
+      className=" w-full h-[80px] leading-[80px] flex items-center"
     >
       <div className="container">
         <div className="flex items-center justify-between">
           {/* LOGO */}
 
-          <div className="flex flex-row items-center justify-center gap-[2px]">
-            <p
-              className="w-[44px] h-[44px] bg-primaryColor text-white text-[22px] font-[500]
-             flex items-center justify-center rounded-full transform rotate-45"
-            >
-              M
-            </p>
+          <div className="flex flex-row items-center justify-center ">
+            <img src={mIcon} />
             <div className="leading-[20px]">
               <motion.h2
                 variants={logoVariants}
@@ -74,8 +82,22 @@ const Header = () => {
           </div>
 
           {/* LINKS */}
-          <div className={`menu ${toggleMobileMenu ? "show__menu" : ""}`}>
+          <div
+            className={`menu ${toggleMobileMenu ? "show__menu" : ""}`}
+            ref={sideMenuRef}
+          >
             <ul className="flex items-center gap-10">
+              <li>
+                <a
+                  onClick={handleOffSet}
+                  className={
+                    "text-smallTextColor hover:text-[#0D6EFD] font-[600]"
+                  }
+                  href="#home"
+                >
+                  home
+                </a>
+              </li>
               <li>
                 <a
                   onClick={handleOffSet}
@@ -96,15 +118,6 @@ const Header = () => {
                   href="#projects"
                 >
                   projects
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={handleOffSet}
-                  className="text-smallTextColor hover:text-[#0D6EFD] font-[600]"
-                  href="#contact"
-                >
-                  contact
                 </a>
               </li>
             </ul>
@@ -131,6 +144,12 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {toggleMobileMenu && (
+        <div
+          className="overlay"
+          onClick={() => setToggleMobileMenu(false)}
+        ></div>
+      )}
     </header>
   );
 };

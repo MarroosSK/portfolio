@@ -1,12 +1,40 @@
 /* eslint-disable react/prop-types */
+import { useEffect, useRef } from "react";
 import { myProjects } from "../../helpers/data";
+import "./Modal.css";
 
 export const Modal = ({ activeId, setShowModal }) => {
+  const showModalRef = useRef();
   const projectToShow = myProjects.find((project) => project.id === activeId);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!showModalRef.current.contains(e.target)) {
+        setShowModal(false);
+      }
+    };
+
+    const handleEscapeKey = (e) => {
+      if (e.key === "Escape") {
+        setShowModal(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscapeKey);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, []);
+
   return (
-    <div className="w-full h-full fixed top-0 left-0 z-999  bg-headingColor bg-opacity-40">
-      <div className=" w-11/12 md:max-w-[600px] md:w-full h-[80%] absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5 overflow-y-scroll">
+    <div className="modal__box   bg-headingColor bg-opacity-40">
+      <div
+        ref={showModalRef}
+        className=" w-11/12 md:max-w-[600px] md:w-full h-[80%] absolute top-1/2 left-1/2 z-888 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5 overflow-y-scroll"
+      >
         <figure>
           <img className="rounded-[8px]" src={projectToShow.img} alt="" />
         </figure>

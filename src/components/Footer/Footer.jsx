@@ -1,5 +1,6 @@
 import SkillSet from "../SkillSet/SkillSet";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import mIcon from "../../assets/Micon.png";
 
 const Footer = () => {
   return (
@@ -8,13 +9,8 @@ const Footer = () => {
       <div className="container">
         <div className=" flex flex-col sm:flex-row items-center justify-between">
           <div className=" flex flex-col  justify-center">
-            <div className="flex flex-row items-center justify-center sm:justify-start gap-[2px]">
-              <p
-                className="w-[44px] h-[44px] bg-primaryColor text-white text-[22px] font-[500]
-               flex items-center justify-center rounded-full transform rotate-45"
-              >
-                M
-              </p>
+            <div className="flex flex-row items-center justify-center sm:justify-start ">
+              <img src={mIcon} />
               <div className="leading-[20px]">
                 <h2 className="text-xl text-smallTextColor font-[700]">
                   arroos

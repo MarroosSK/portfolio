@@ -17,7 +17,7 @@ const Hero = () => {
   const aboutInfo = about[0] + about[1];
 
   return (
-    <div className="container">
+    <div id="home" className="container">
       <motion.div
         data-aos="fade-up"
         data-aos-duration="1100"
@@ -51,7 +51,7 @@ const Hero = () => {
                 />
               </h6>
               <p className="max-w-[600px] text-[14px] sm:text-[18px] py-4">
-                Ready to work with React on real world projects with eager to
+                Ready to work with React on real-world projects and eager to
                 learn new technologies.
               </p>
               <SkillSet />
