@@ -57,7 +57,7 @@ export const skillSet = [
   },
   {
     id: 6,
-    name: "Redux Toolkit",
+    name: "R. Toolkit",
     icon: <SiRedux size={25} />,
   },
   {
@@ -112,7 +112,7 @@ export const myProjects = [
     source: "https://github.com/MarroosSK/17.Visit_Blog",
     img: whyb,
     stack: ["Typescript", "React Query", "Router Dom", "Axios", "React-Quill"],
-    category: "front-end",
+    category: "full-stack",
   },
   {
     id: uuidv4(),
