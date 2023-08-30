@@ -77,7 +77,11 @@ const Projects = () => {
 
         <div className="text-center mt-6">
           <button className="text-smallTextColor border border-solid border-smallTextColor hover:bg-smallTextColor hover:text-white ease-in duration-300 px-4 py-2 rounded-[8px]">
-            <a href="" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/MarroosSK?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
               See More
             </a>
           </button>

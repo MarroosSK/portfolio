@@ -30,7 +30,7 @@ const About = () => {
                         {personal.info}
                       </p>
                       <button className=" w-full text-[#0D6EFD] flex items-center justify-center gap-2  font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-[#0D6EFD] hover:text-white ease-in duration-300">
-                        <a href="/files/myfile.pdf" target="_blank">
+                        <a href="/files/resumeMarosChmel.pdf" target="_blank">
                           Check CV
                         </a>
                       </button>
