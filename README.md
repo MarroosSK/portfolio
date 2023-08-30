@@ -1,12 +1,12 @@
 
 # Portfolio
 
-It is a page of my portfolio.
+This is my Portfolio page.
 
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/fRrMBJmw/portfolio-Pic.jpg)
+![App Screenshot](https://i.postimg.cc/yxXSQYYg/portfolio-Pic.jpg)
 
 
 ## Authors
@@ -21,7 +21,7 @@ https://marroosportfolio.netlify.app
 
 ## Tech Stack
 
-**Technologies used:** React, React-Bootstrap,React-Hook-Form, Typewritter, Framer-motion
+**Technologies used:** React, Tailwind css,React-Hook-Form, Typewritter, Framer-motion, AOS
 
 
 
@@ -38,5 +38,5 @@ I'm a react frontend developer working on my skills everyday.
 
 
 ## 🛠 Skills
-Javascript, Typescript, HTML, CSS, React
+Javascript, Typescript, HTML, CSS, React, Express, SQL (Postgre/Mysql), Prisma ORM
 
