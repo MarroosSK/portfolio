@@ -111,7 +111,16 @@ export const myProjects = [
     info: "Travelling blog. You can try to create your own blog. You can also search for certain blogs or filter by category.",
     source: "https://github.com/MarroosSK/17.Visit_Blog",
     img: whyb,
-    stack: ["Typescript", "React Query", "Router Dom", "Axios", "React-Quill"],
+    stack: [
+      "Typescript",
+      "Express",
+      "Postgre SQL",
+      "Prisma",
+      "React Query",
+      "Router Dom",
+      "Axios",
+      "React-Quill",
+    ],
     category: "full-stack",
   },
   {
