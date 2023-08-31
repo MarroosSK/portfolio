@@ -58,7 +58,11 @@ const Projects = () => {
               className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-1"
             >
               <figure>
-                <img className="rounded-[8px]" src={project.img} alt="" />
+                <img
+                  className="rounded-[8px]"
+                  src={project.img}
+                  alt={project.title}
+                />
               </figure>
 
               <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">

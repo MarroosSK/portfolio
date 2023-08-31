@@ -36,7 +36,11 @@ export const Modal = ({ activeId, setShowModal }) => {
         className=" w-11/12 md:max-w-[600px] md:w-full h-[80%] absolute top-1/2 left-1/2 z-888 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5 overflow-y-scroll"
       >
         <figure>
-          <img className="rounded-[8px]" src={projectToShow.img} alt="" />
+          <img
+            className="rounded-[8px]"
+            src={projectToShow.img}
+            alt={projectToShow.title}
+          />
         </figure>
         <div>
           <h2 className="text-2xl text-headingColor font-[700] my-5">
