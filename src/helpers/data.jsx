@@ -118,7 +118,7 @@ export const myProjects = [
     title: "MA Gallery",
     url: "https://ma-gallery.vercel.app",
     info: "Create your own personal galleries. To log in with dummy credentials type jane+clerk_test@example.com in email input and 424242 in password input.",
-    source: "https://ma-gallery.vercel.app",
+    source: "https://github.com/MarroosSK/ma-gallery",
     img: maGallery,
     stack: [
       "Next.Js",
